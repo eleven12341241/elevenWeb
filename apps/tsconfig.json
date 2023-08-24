@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "importHelpers": true,
+    "allowSyntheticDefaultImports": true,  // 当初在vite.config.ts 中 import path的时候报错了，加上这个就好了
+    "moduleResolution": "node", // 这对于大多数 TypeScript 项目来说是必要的，因为它们通常依赖于 Node.js 的模块系统。如果你没有设置这个选项，TypeScript 可能无法正确地找到和解析你的模块，这可能会导致编译错误。
+    "lib": ["esnext", "dom"], // 表示你的代码将在支持最新 ECMAScript 功能和 DOM API 的环境中运行。
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+}
