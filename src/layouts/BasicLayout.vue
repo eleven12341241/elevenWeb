@@ -1,5 +1,8 @@
 <template>
   <div class="layout">
+    <div class="topbar">
+      <Topbar />
+    </div>
     <div class="sidebar">
       <Sidebar />
     </div>
@@ -14,8 +17,8 @@
 <script setup lang="ts" name="BasicLayout">
 import { ref } from "vue";
 import Sidebar from "@/components/Sidebar.vue";
+import Topbar from "@/components/Topbar.vue";
 
-const defaultActive = ref("1-1"); // 默认选中的项
 const isCollapsed = ref(false); // 侧边栏折叠状态
 
 const toggleCollapse = () => {
