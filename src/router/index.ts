@@ -35,12 +35,12 @@ const routes: Array<RouteRecordRaw> = [
             component: () => import("@/pages/About/index.vue"),
           },
           {
-            name: "login",
-            path: "/home/login",
+            name: "info",
+            path: "/home/info",
             meta: {
-              title: "登录",
+              title: "个人信息",
             },
-            component: () => import("@/pages/Login/index.vue"),
+            component: () => import("@/pages/User/info.vue"),
           },
           {
             name: "xiaogong",
@@ -63,16 +63,16 @@ const routes: Array<RouteRecordRaw> = [
     ],
     // redirect:{name:'home'},  打开这个会导致一直报错，Uncaught RangeError: Maximum call stack size exceeded，之后记得看一下啊
   },
-  // {
-  //   path: "/login",
-  //   name: "login",
-  //   meta: {
-  //     title: "登录",
-  //     icon: "el-icon-s-home",
-  //     breadcrumb: true,
-  //   },
-  //   component: () => import("@/pages/Login/index.vue"),
-  // },
+  {
+    path: "/login",
+    name: "login",
+    meta: {
+      title: "登录",
+      icon: "el-icon-s-home",
+      breadcrumb: true,
+    },
+    component: () => import("@/pages/Login/index.vue"),
+  },
   // {
   //   path: "/about",
   //   name: "about",

@@ -29,12 +29,22 @@
 </template>
 
 <script lang="ts" setup>
-const logout = () => {
-  // 执行退出登录的操作，例如清除用户状态或跳转到登录页面
-};
+import { useRouter } from "vue-router";
+const router = useRouter();
 
-const onCommand = () => {
-  console.log('onCommand');
+
+const onCommand = (name: string) => {
+  switch (name) {
+    case "my":
+      router.push("/home/info");
+      break;
+    case "exit":
+      // todo: 退出登录
+      router.push("/login");
+      // await service.base.comm.logout();
+      // user.logout();
+      break;
+  }
 };
 </script>
 
@@ -75,7 +85,7 @@ const onCommand = () => {
 }
 
 .user-dropdown-menu {
-  top: 35px;
+  /* top: 35px; */
   right: 20px;
   border-radius: 4px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);

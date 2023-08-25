@@ -2,7 +2,7 @@
   <el-row class="tac">
 
     <el-col :span="24">
-      <h5 class="mb-2">Custom colors</h5>
+      <h5 class="mb-2">Eleven Web</h5>
       <el-menu active-text-color="#ffd04b" background-color="#545c64" class="el-menu-vertical-demo" default-active="login"
         router="true" text-color="#fff" @open="handleOpen" @close="handleClose">
         <!-- 导航栏加上 router= "true" 就可以了进行导航栏的页面跳转了 -->
@@ -11,12 +11,9 @@
             <el-icon>
               <location />
             </el-icon>
-            <span>Navigator One</span>
+            <span>Wife</span>
           </template>
           <el-menu-item-group>
-            <el-menu-item index="login">
-              <router-link to="/home/login">Login</router-link>
-            </el-menu-item>
             <el-menu-item index="Linnite">
               <router-link to="/home/linnite">琳妮特</router-link>
             </el-menu-item>

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>欢迎来到about！</h1>
-    <p>dwa</p>
+    <h1>欢迎来到eleven的世界！</h1>
+    <p></p>
   </div>
 </template>
   
